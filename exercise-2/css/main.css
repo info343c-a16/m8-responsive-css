@@ -1,0 +1,45 @@
+/* Assign styles here */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Flexbox container */
+
+.flexbox-container {
+    display: flex;
+    border: 1px solid black;
+    min-height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+/* Each column in the flexbox */
+
+.flex-column {
+    padding: 20px;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+
+/* Content within each flexbox item */
+
+.content {
+    background-color: tomato;
+    text-align: center;
+    font-size: 4em;
+    height: 100%;
+}
+
+
+/* On larger screens, have each item take up 25% */
+
+@media screen and (min-width:768px) {
+    .flex-column {
+        flex-basis: 20%;
+    }
+}

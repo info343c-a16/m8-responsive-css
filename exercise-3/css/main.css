@@ -1,0 +1,13 @@
+/* Assign styles here */
+
+* {
+    box-sizing: border-box;
+}
+
+.col {
+    text-align: center;
+}
+
+i {
+    margin-bottom: 10px;
+}
