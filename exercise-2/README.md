@@ -4,6 +4,7 @@ In this exercise, you'll practice using the flex-box layout to manipulate the di
 As described in [module-4](https://github.com/info343c-a16/m4-git-intro), start by forking and cloning this repository. Then, do the following in your `css/main.css` file:
 
 **Flexbox Container**
+
 Your flexbox container should have the following CSS properties:
 
 - Set some initial properties by assigning it a minimum height of `200px`, and a border that is `1px solid black`
@@ -12,11 +13,13 @@ Your flexbox container should have the following CSS properties:
 - Set the `justify-content` property such that it _centers_ content **horizontally** (also try out `flex-start`, `flex-end`, `space-around`, `space-between`)
 
 **Flexbox Items**
+
 The items (immediate children) in your flexbox container should have the following styles:
 - Set the padding to `20px`
 - Have the items take up `100%` of the width (but _don't_ use the `width` property)
 
 **Item Content**
+
 Set the items with the class `content` to have the following styles. Also, think about what advantages are provided by wrapping this content with the `flex-column` divs.
 - Set the background color to `tomato`
 - Align text in the center
@@ -24,6 +27,7 @@ Set the items with the class `content` to have the following styles. Also, think
 - Set the height to `100%`
 
 **Media Queries**
+
 Write the media queries that impose the following styles:
 - On medium screens (>=768px), have the flexbox items each take up 50% of the flexbox
 - On large screens (>=992px) have the flexbox items take up 25% of the flexbox
