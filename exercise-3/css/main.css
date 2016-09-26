@@ -11,3 +11,23 @@
 i {
     margin-bottom: 10px;
 }
+
+h1 {
+    font-weight: 300;
+}
+
+.anchor {
+    color: #b388ff;
+}
+
+.bell {
+    color: #8c9eff;
+}
+
+.gears {
+    color: #82b1ff;
+}
+
+.asterisk {
+    color: #80d8ff;
+}

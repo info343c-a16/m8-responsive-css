@@ -139,25 +139,30 @@ Note the **mobile-first** approach used in the code section above: the default p
 To experiment with flexbox, checkout [flexboxfroggy](http://flexboxfroggy.com/), or see [exercise-2](exercise-2).
 
 ## CSS Frameworks
-A CSS framework is a pre-written set of CSS files that apply styles to your elements. Even for basic tasks, it makes sense to use a CSS framework to structure your code. They are particularly useful for making sites responsive based on screen size, which we'll describe below.
+A CSS framework is a pre-written set of CSS files that apply styles to your elements. Even for basic tasks, it makes sense to use a CSS framework to structure your code. They are particularly useful for making sites responsive based on screen size, which we'll describe below. There are [dozens](http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html) of available frameworks, but the important thing is that you choose one that you like, and can build on the work of others.
 
-Two of the most popular frameworks are [Bootstrap](http://getbootstrap.com/), developed by Twitter, and Materialize, whose design was _inspired by_ the [material design[(http://materializecss.com/about.html)] principles championed by Google. Both of these framewoks leverage similar concepts (most importantly, laying out elements in responsive **grids**), and provide default styles for common HTML elements, such as buttons, dropdown menus, headers, footers, etc. In this module, we'll describe the use of Materialize, but the approach to using Bootstap (and many other frameworks) is nearly identical.
-
-There are [dozens](http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html) of available frameworks, but the important thing is that you choose one that you like, and can build on the work of others.
+Two of the most popular frameworks are [Bootstrap](http://getbootstrap.com/), developed by Twitter, and [Materialize](http://materializecss.com/), whose design was _inspired by_ the [material design](http://materializecss.com/about.html) principles championed by Google. Both of these frameworks provide well great default styles for common HTML elements (buttons, dropdown menus, headers, footers, etc.) and, more importantly, leverage similar concepts for achieving a responsive layout (laying out elements in responsive **grids**). In this module, we'll describe the use of Materialize, but the approach to using Bootstap (and many other frameworks) is nearly identical.
 
 To use a CSS framework, you simply read the file(s) into the head section of your .html file. Note, some frameworks leverage JavaScript files for more advanced interactivity -- these are only required for certain elements (such as modals, which are like fancy dialog boxes) to render properly:
 
+```html
 <head>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
+  <!-- Load jQuery library, a dependency for Materialize -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 </head>
+```
 
 Once you have loaded a framework, you will want to assign the appropriate _classes_ to your HTML elements to apply the pre-written styles. For example, assiging a `<button>` element class `btn` will apply your styles (assuming you have loaded the framework, of course):
 
 ![buttons with and without class btn](imgs/buttons.png)
+
+The classes you need to use are well described in the [documentation](http://materializecss.com/). While a framework can help with the styling of individual elements, it's real power is in helping layout elements for different screen sizes.
 
 ### The Grid
 While you can write media queries yourself, it can be easier (and more consistent) to leverage the pre-defined styles that are written in the CSS files of your framework. Both bootstrap and materialize allow you to create a grid system to arrange elements on the screen. The premise is that a **row** takes up the width of your screen, and is always 12 **columns** wide. Then, you can apply a pre-defined set of CSS classes to describe _how many columns_ you want an element to occupy given a certain screen size. Here is the table of screen sizes for each class for the Materialize framework:
