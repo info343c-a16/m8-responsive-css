@@ -72,10 +72,13 @@ To adjust this, we simply want to set the `box-sizing` property to `border-box`.
 }
 ```
 
+You'll likely include this in _all_ of your CSS files moving forward, and it should interfere with your stylings.
+
 ### Structure
 To implement a flexbox layout, you'll create a flexbox **container**, and place multiple **items** inside that container. For example:
 
 ```html
+<!-- HTML file with flexbox elements -->
 <div class="flex-container">
     <div class="flex-item">
         <h2>Column 1</h2>
@@ -91,30 +94,32 @@ To implement a flexbox layout, you'll create a flexbox **container**, and place 
     </div>
 </div>
 ```
+
 ```css
+/* Apply flexbox styles in your .css file -->
 .flex-container {
   display:flex; /* Set the display to flex! */
 }
 
 .flex-item {
-  flex-basis:25%;
+  flex-basis:25%; /* Set the amount of horizontal space to take up */
 }
 
 ```
-The purpose of the flexbox layout (`display:flex;`) is to manipulate the layout of _child elements_ within the _container_. The flexbox style is **does not** affect anything _outside_ of the container, or _inside_ of the child items. Instead, it simply arranges the items inside of the container.
+The purpose of the flexbox layout (`display:flex;`) is to manipulate the layout of _child elements_ within the _container_. The flexbox style **does not** affect anything _outside_ of the container, or _inside_ of the child items. Instead, it simply arranges the items inside of the container by manipulating their width, height, and alignment.
 
 In the above example, each item with class `.flex-item` is set to take up 25% of the width of the flex-container. While we could have used `width` instead of `flex-basis` in the example above, `flex-basis` is far more [extensible](http://stackoverflow.com/questions/34352140/what-are-the-differences-between-flex-basis-and-width).
 
 Here are a few additional properties you may want to apply to your flexbox **container** to configure the layout of your **items**:
 
-- `justify-content`: Horizontally distribute items in your flexbox container, at the start (`flex-start`), end (`flex-end`), or center (`flex-center`) of the container. You can also add space around (`space-around`) or between (`space-between`) items.
-- `align-items`: Vertically distribute items in your flexbox container, to fill the container (`stretch`), at the start or end of the container (`flex-start`, `flex-end`), in the vertical center (`center`) or at the bottom of the container (`bottom`)
-- `flex-wrap`: Wrap items onto a new line if necessary (`wrap`, `nowrap`, or `wrap-reverse`)
+- `justify-content`: **Horizontally** distribute items in your flexbox container, at the start (`flex-start`), end (`flex-end`), or center (`flex-center`) of the container. You can also add space around (`space-around`) or between (`space-between`) items.
+- `align-items`: **Vertically** distribute items in your flexbox container, to fill the container (`stretch`), at the start or end of the container (`flex-start`, `flex-end`), in the vertical center (`center`), or at the bottom of the container (`bottom`)
+- `flex-wrap`: **Wrap items** onto a new line if necessary (`wrap`, `nowrap`, or `wrap-reverse`)
 
 Based on these (and a few other) properties, your browser will compute the optimal layout for the items within your flexbox.
 
 ### Flexbox and Media Queries
-While it is possible to leverage flexbox to change the number of items in a given row, you will still need to use media queries to gain full control over your layout across devices. The most common change you'll want to make is adjusting the amount of width taken up by each flex item by adjusting the `flex-basis` property. This is easily implemented using media queries:
+While it is possible to leverage flexbox to change the number of items in a given row, you will still need to use media queries to gain full control over your layout across devices. The most common change you'll want to make is adjusting the _amount of width_ taken up by each flex item by adjusting the `flex-basis` property. This is easily implemented using media queries:
 
 ```css
 /* Have each item take up 100% of the flexbox-container */
