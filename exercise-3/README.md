@@ -9,7 +9,7 @@ As described in [module-4](https://github.com/info343c-a16/m4-git-intro), start 
 For each of the four sections sections (anchor, bell, asterisk, gear), you will need to create the following elements:
 - A `div` with class `col`, set to take up 12 columns on small screens, 6 columns on medium screens, and 3 columns on large screens
 - A top level header with the name of the element
-- An `<i>` element in which to render your font-awesome _icon_. Inside the `<i>` element, you'll need to assign the proper class to determine the element you wish to use and the size. For example, `class="fa fa-email large"` would render a large email icon. You may want to put a line break after your icon, or manipulate it's CSS style
+- An `<i>` element in which to render your font-awesome _icon_. Inside the `<i>` element, you'll need to assign the proper class to determine which icon you wish to use, and its size. For example, `class="fa fa-email large"` would render a large email icon. You may want to put a line break after your icon, or manipulate it's CSS style
 - A button with class `btn`
 
 In your `css/main.css` file, apply the following styles:
