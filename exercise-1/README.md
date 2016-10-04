@@ -1,6 +1,15 @@
 # Exercise-1
 In this short exercise, you'll practice writing media queries to conditionally apply styles at different screen sizes. Remember, in a mobile-first approach, the default styles are built for _small screens_, and media rules are written to enhance the layout on larger screens.
 
+This is the desired layout for large screens (>768px):
+
+![large screen layout](imgs/ex-1-large.png)
+
+
+And this is the layout for small screens:
+
+![small screen layout](imgs/ex-1-small.png)
+
 As described in [module-4](https://github.com/info343c-a16/m4-git-intro), start by forking and cloning this repository. Then, in your `css/main.css` file, apply the following styles:
 
 1. Elements with class `wrapper` should display `inline-block`, have a font-size of `2rem`, be wrapped in a `2px solid white` border, and have a background of `#dad9d9`.

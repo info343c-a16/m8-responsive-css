@@ -3,6 +3,19 @@ In this exercise, you'll practice using the flex-box layout to manipulate the di
 
 As described in [module-4](https://github.com/info343c-a16/m4-git-intro), start by forking and cloning this repository. Then, do the following in your `css/main.css` file:
 
+This is the desired layout for large screens (>992px):
+
+![large screen layout](imgs/large-screens.png)
+
+This is the desired layout for medium screens (>768px):
+
+![medium screen layout](imgs/medium-screens.png)
+
+
+And this is the layout for small screens:
+
+![small screen layout](imgs/small-screens.png)
+
 **Flexbox Container**
 
 Your flexbox container should have the following CSS properties:

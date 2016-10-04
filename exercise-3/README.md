@@ -1,6 +1,20 @@
 # Exercise-3
 In this exercise, you'll practice using the Materialize framework to create a different layout for different screen sizes. We'll also experiment with using [Font Awesome](http://fontawesome.io/) icons. You'll implement different layouts for [small](imgs/small-screens.png), [medium](imgs/medium-screens.png), and [large](imgs/large-screens.png) screen sizes.
 
+This is the desired layout for large screens (>992px):
+
+![large screen layout](imgs/large-screens.png)
+
+This is the desired layout for medium screens (>600px):
+
+![medium screen layout](imgs/medium-screens.png)
+
+
+And this is the layout for small screens:
+
+![small screen layout](imgs/small-screens.png)
+
+
 As described in [module-4](https://github.com/info343c-a16/m4-git-intro), start by forking and cloning this repository. Then, in your `index.html` file:
 - Add an empty `<nav>` element to the top of your page
 - Create a `<div>` element with class `container` in which to put your elements
