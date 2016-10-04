@@ -96,7 +96,7 @@ To implement a flexbox layout, you'll create a flexbox **container**, and place 
 ```
 
 ```css
-/* Apply flexbox styles in your .css file -->
+/* Apply flexbox styles in your .css file */
 .flex-container {
   display:flex; /* Set the display to flex! */
 }
